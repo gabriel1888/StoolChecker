@@ -1,0 +1,13 @@
+{
+  "name": "stool-checker-static-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Accessible, privacy-conscious static health-information prototype",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.56.1"
+  }
+}

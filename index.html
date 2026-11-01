@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A browser-based stool and urine appearance guide offering general health information.">
+  <title>Stool Checker — Know Your Gut</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-action="skip-main">Skip to main content</a>
+
+  <noscript>
+    <p class="noscript-notice">The checker needs JavaScript to work. You can still read <a href="https://www.nhs.uk/conditions/constipation/">NHS health information</a> or <a href="https://tally.so/r/GxL9E2">open the optional sign-up form</a>.</p>
+  </noscript>
+
+  <main id="main-content" tabindex="-1">
+    <!-- Landing page -->
+    <section class="page active" id="page-landing" aria-labelledby="landing-title">
+      <div class="lp">
+        <header class="site-header">
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a class="site-nav-logo" href="#home" aria-label="Stool Checker home">Stool Checker</a>
+            <div class="site-nav-actions">
+              <a class="site-nav-link" href="#checker/stool">Start checker</a>
+              <a class="site-nav-link highlight" href="#business">For businesses</a>
+              <a class="site-nav-link" href="#privacy">Privacy</a>
+            </div>
+          </nav>
+        </header>
+
+        <section class="section-card hero-card" aria-labelledby="landing-title">
+          <p class="badge">Coming soon</p>
+          <h1 id="landing-title">Your gut is<br><em>telling you something.</em></h1>
+          <p>Check your stool instantly using the Bristol Stool Chart and receive general gut health information — free, with no app needed.</p>
+          <div class="tally-loader" id="tally-loader-landing-hero">
+            <p class="tally-notice">The optional sign-up form is provided by Tally. Load it only if you would like to share your contact details with Tally.</p>
+            <div class="tally-loader-actions">
+              <button class="btn-primary" id="load-tally-landing-hero" type="button" data-load-tally="tally-landing-hero">Load sign-up form</button>
+              <a class="tally-fallback-link" href="https://tally.so/r/GxL9E2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Open the form on Tally</a>
+            </div>
+          </div>
+          <iframe id="tally-landing-hero" data-tally-src="https://tally.so/embed/GxL9E2?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1" title="Stool Checker sign-up form provided by Tally" loading="lazy" referrerpolicy="no-referrer" hidden></iframe>
+        </section>
+
+        <section class="try-now-card" aria-labelledby="try-now-title">
+          <h2 id="try-now-title">Try it right now</h2>
+          <p>No sign-up. No app. Choose the closest match and receive instant general information.</p>
+          <a class="btn-light" href="#checker/stool">Check my stool <span aria-hidden="true">→</span></a>
+        </section>
+
+        <section class="section-card" aria-labelledby="problem-title">
+          <p class="section-label">The problem</p>
+          <h2 id="problem-title">Most people ignore a daily health signal</h2>
+          <p>Changes in bowel habits can be worth noticing, although appearance alone cannot tell you what is happening in your gut.</p>
+          <div class="problem-grid">
+            <article class="problem-item">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false"><circle cx="9" cy="9" r="7" stroke="#bbb" stroke-width="1.2"/><line x1="9" y1="5.5" x2="9" y2="10" stroke="#bbb" stroke-width="1.3" stroke-linecap="round"/><circle cx="9" cy="12.5" r="0.7" fill="#bbb"/></svg>
+              <p>No idea what “normal” actually looks like</p>
+            </article>
+            <article class="problem-item">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false"><path d="M3 14Q9 4 15 14" stroke="#bbb" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+              <p>Symptoms dismissed or missed entirely</p>
+            </article>
+            <article class="problem-item">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false"><rect x="3" y="2" width="12" height="14" rx="2" stroke="#bbb" stroke-width="1.2"/><line x1="6" y1="7" x2="12" y2="7" stroke="#bbb" stroke-width="1" stroke-linecap="round"/><line x1="6" y1="10" x2="10" y2="10" stroke="#bbb" stroke-width="1" stroke-linecap="round"/></svg>
+              <p>People often have no simple way to spot patterns over time</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-card" aria-labelledby="future-insights-title">
+          <p class="section-label">Planned app features</p>
+          <h2 id="future-insights-title">Future logging and smart insights</h2>
+          <div class="steps">
+            <article class="step">
+              <span class="step-num" aria-hidden="true">1</span>
+              <div>
+                <h3>Planned: log your stool in seconds</h3>
+                <p>A future app would let you select your type from the Bristol chart in under 30 seconds.</p>
+              </div>
+            </article>
+            <article class="step">
+              <span class="step-num" aria-hidden="true">2</span>
+              <div>
+                <h3>Planned: track patterns over time</h3>
+                <p>A future dashboard is intended to show trends across days and weeks alongside food, stress, sleep, and hydration inputs.</p>
+              </div>
+            </article>
+            <article class="step">
+              <span class="step-num" aria-hidden="true">3</span>
+              <div>
+                <h3>Planned: receive actionable insights</h3>
+                <p>A future app may offer personalised recommendations and reminders about when to consider speaking to a GP.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-card" aria-labelledby="features-title">
+          <p class="section-label">Future app plans</p>
+          <h2 id="features-title">Everything your gut needs, planned for the app</h2>
+          <div class="features-grid">
+            <article class="feature"><h3>Planned Bristol Chart logging</h3><p>Visual, quick, and embarrassment-free entries using the medically recognised scale.</p></article>
+            <article class="feature"><h3>Planned trend tracking</h3><p>Weekly and monthly charts intended to help spot irregularities early.</p></article>
+            <article class="feature"><h3>Planned diet correlation</h3><p>Tools intended to help explore how food, hydration, and lifestyle choices affect your gut.</p></article>
+            <article class="feature"><h3>Planned health flags</h3><p>Potential alerts for patterns that may warrant medical attention.</p></article>
+            <article class="feature"><h3>Planned reminders</h3><p>Optional nudges and habit tracking to support regular logging.</p></article>
+            <article class="feature"><h3>Planned data export</h3><p>A possible future health report to discuss with your GP.</p></article>
+          </div>
+        </section>
+
+        <section class="cta-card" aria-labelledby="landing-cta-title">
+          <h2 id="landing-cta-title">Be first to know<br>when we launch</h2>
+          <div class="tally-loader" id="tally-loader-landing-cta">
+            <p class="tally-notice">The optional sign-up form is provided by Tally. Load it only if you would like to share your contact details with Tally.</p>
+            <div class="tally-loader-actions">
+              <button class="btn-primary" id="load-tally-landing-cta" type="button" data-load-tally="tally-landing-cta">Load sign-up form</button>
+              <a class="tally-fallback-link" href="https://tally.so/r/GxL9E2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Open the form on Tally</a>
+            </div>
+          </div>
+          <iframe id="tally-landing-cta" data-tally-src="https://tally.so/embed/GxL9E2?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1" title="Stool Checker launch sign-up form provided by Tally" loading="lazy" referrerpolicy="no-referrer" hidden></iframe>
+        </section>
+
+        <footer class="site-footer">
+          <a href="#privacy">Privacy information</a>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Checker page -->
+    <section class="page" id="page-checker" aria-labelledby="checker-title">
+      <div class="checker">
+        <header class="site-header">
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a class="site-nav-logo" href="#home" aria-label="Stool Checker home">Stool Checker</a>
+            <div class="site-nav-actions">
+              <a class="site-nav-link" href="#business">For businesses</a>
+              <a class="site-nav-link" href="#privacy">Privacy</a>
+            </div>
+          </nav>
+          <div class="checker-header">
+            <h1 class="checker-wordmark" id="checker-title">Stool &amp; Urine Checker</h1>
+            <p class="checker-sub">General health information, in your browser</p>
+          </div>
+        </header>
+
+        <aside class="precheck-disclaimer" aria-labelledby="precheck-title">
+          <h2 id="precheck-title">Before you check</h2>
+          <p>General information only, not a diagnosis; the content awaits clinical review. Discuss concerns with a health professional. In the UK, call 111 for urgent advice or 999 for an emergency; elsewhere, use local services.</p>
+        </aside>
+
+        <div class="tab-bar" role="tablist" aria-label="Checker type">
+          <button class="tab-btn active" id="tab-stool" type="button" role="tab" aria-controls="panel-stool" aria-selected="true" tabindex="0">Stool</button>
+          <button class="tab-btn" id="tab-urine" type="button" role="tab" aria-controls="panel-urine" aria-selected="false" tabindex="-1">Urine</button>
+        </div>
+
+        <div id="result-announcement" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></div>
+
+        <section class="tab-panel active" id="panel-stool" role="tabpanel" aria-labelledby="tab-stool" tabindex="0">
+          <section class="cscreen active" id="cscreen-select" aria-labelledby="stool-question">
+            <h2 class="q" id="stool-question">What does your stool look like?</h2>
+            <p class="q-sub">Select the closest match from the Bristol Stool Chart. Your choice is processed in this browser.</p>
+            <div class="type-list">
+              <button class="type-btn" id="stool-type-1" type="button" data-stool-type="1">
+                <span class="type-visual"><svg width="50" height="36" viewBox="0 0 50 36" aria-hidden="true" focusable="false"><circle cx="9" cy="21" r="6" fill="#8B6F47"/><circle cx="21" cy="18" r="6" fill="#7A5F3C"/><circle cx="33" cy="21" r="6" fill="#8B6F47"/><circle cx="43" cy="17" r="5" fill="#7A5F3C"/><circle cx="15" cy="29" r="4.5" fill="#6B5233"/><circle cx="27" cy="29" r="4.5" fill="#7A5F3C"/></svg></span>
+                <span><span class="type-name">Separate hard lumps</span><span class="type-hint">Like small stones or nuts</span></span>
+                <span class="type-num" aria-hidden="true">1</span>
+              </button>
+              <button class="type-btn" id="stool-type-2" type="button" data-stool-type="2">
+                <span class="type-visual"><svg width="50" height="36" viewBox="0 0 50 36" aria-hidden="true" focusable="false"><ellipse cx="25" cy="19" rx="19" ry="9" fill="#8B6F47"/><ellipse cx="25" cy="19" rx="14" ry="6" fill="#7A5F3C"/><ellipse cx="25" cy="19" rx="8" ry="3.5" fill="#6B5233"/></svg></span>
+                <span><span class="type-name">Sausage, lumpy surface</span><span class="type-hint">Bumpy and hard to pass</span></span>
+                <span class="type-num" aria-hidden="true">2</span>
+              </button>
+              <button class="type-btn" id="stool-type-3" type="button" data-stool-type="3">
+                <span class="type-visual"><svg width="50" height="36" viewBox="0 0 50 36" aria-hidden="true" focusable="false"><path d="M4 19Q10 15 16 19Q22 23 28 19Q34 15 40 19Q44 21 47 19" stroke="#8B6F47" stroke-width="10" fill="none" stroke-linecap="round"/></svg></span>
+                <span><span class="type-name">Sausage, cracked surface</span><span class="type-hint">Log-shaped but with cracks</span></span>
+                <span class="type-num" aria-hidden="true">3</span>
+              </button>
+              <button class="type-btn ideal-btn" id="stool-type-4" type="button" data-stool-type="4">
+                <span class="type-visual"><svg width="50" height="36" viewBox="0 0 50 36" aria-hidden="true" focusable="false"><path d="M4 19Q25 16 47 19" stroke="#8B6F47" stroke-width="11" fill="none" stroke-linecap="round"/></svg></span>
+                <span><span class="type-name">Smooth, soft sausage</span><span class="type-hint">A common pattern on the Bristol chart</span></span>
+                <span class="type-num" aria-hidden="true">4</span>
+              </button>
+              <button class="type-btn" id="stool-type-5" type="button" data-stool-type="5">
+                <span class="type-visual"><svg width="50" height="36" viewBox="0 0 50 36" aria-hidden="true" focusable="false"><ellipse cx="11" cy="19" rx="7" ry="8" fill="#A0845A"/><ellipse cx="25" cy="21" rx="7" ry="8" fill="#8B6F47"/><ellipse cx="39" cy="18" rx="7" ry="8" fill="#A0845A"/></svg></span>
+                <span><span class="type-name">Soft blobs</span><span class="type-hint">Clear-cut edges, easy to pass</span></span>
+                <span class="type-num" aria-hidden="true">5</span>
+              </button>
+              <button class="type-btn" id="stool-type-6" type="button" data-stool-type="6">
+                <span class="type-visual"><svg width="50" height="36" viewBox="0 0 50 36" aria-hidden="true" focusable="false"><path d="M4 21Q10 13 18 21Q26 29 34 19Q40 11 47 19" stroke="#B89060" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span><span class="type-name">Fluffy, mushy pieces</span><span class="type-hint">Ragged edges, soft</span></span>
+                <span class="type-num" aria-hidden="true">6</span>
+              </button>
+              <button class="type-btn" id="stool-type-7" type="button" data-stool-type="7">
+                <span class="type-visual"><svg width="50" height="36" viewBox="0 0 50 36" aria-hidden="true" focusable="false"><ellipse cx="25" cy="27" rx="19" ry="7" fill="#C4A070" opacity="0.45"/><path d="M4 17C12 11 20 23 28 15C36 7 43 19 47 15" stroke="#C4A070" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span>
+                <span><span class="type-name">Entirely liquid</span><span class="type-hint">No solid pieces at all</span></span>
+                <span class="type-num" aria-hidden="true">7</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="cscreen" id="cscreen-result" aria-labelledby="r-headline">
+            <div class="result-wrap">
+              <article class="result-card">
+                <div class="result-top">
+                  <div class="status-row">
+                    <span class="status-pill" id="r-pill"></span>
+                    <span class="status-type" id="r-type-label"></span>
+                  </div>
+                  <h2 class="result-headline" id="r-headline" tabindex="-1"></h2>
+                  <div class="scale-track" id="r-scale" aria-hidden="true"></div>
+                  <div class="scale-labels" aria-hidden="true"><span>Harder</span><span>Softer</span><span>Watery</span></div>
+                </div>
+                <div class="divider" aria-hidden="true"></div>
+                <div class="advice-section">
+                  <h3 class="advice-heading">What this means</h3>
+                  <div class="advice-list" id="r-advice"></div>
+                </div>
+                <aside class="gp-banner" id="r-gp" aria-label="When to seek medical advice"></aside>
+              </article>
+
+              <section class="waitlist-banner" aria-labelledby="stool-waitlist-title">
+                <h3 id="stool-waitlist-title">Want to track this over time?</h3>
+                <p>We are planning an app to log gut health, spot patterns, and offer daily insights in the future.</p>
+                <div class="tally-loader" id="tally-loader-stool-result">
+                  <p class="tally-notice">The optional sign-up form is provided by Tally. Load it only if you would like to share your contact details with Tally.</p>
+                  <div class="tally-loader-actions">
+                    <button class="tally-btn" id="load-tally-stool-result" type="button" data-load-tally="tally-stool-result">Load sign-up form</button>
+                    <a class="tally-fallback-link" href="https://tally.so/r/GxL9E2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Open the form on Tally</a>
+                  </div>
+                </div>
+                <iframe id="tally-stool-result" data-tally-src="https://tally.so/embed/GxL9E2?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1" title="Stool Checker sign-up form provided by Tally" loading="lazy" referrerpolicy="no-referrer" hidden></iframe>
+              </section>
+              <button class="again-btn" id="reset-stool" type="button" data-reset="stool">← Check another type</button>
+              <p class="disclaimer">Stool Checker provides general health information for educational purposes. It is not a medical diagnosis. If you are in the UK and concerned about symptoms, contact your GP or NHS 111; elsewhere, use local healthcare advice.</p>
+            </div>
+          </section>
+        </section>
+
+        <section class="tab-panel" id="panel-urine" role="tabpanel" aria-labelledby="tab-urine" tabindex="0">
+          <section class="cscreen active" id="ucscreen-select" aria-labelledby="urine-question">
+            <h2 class="q" id="urine-question">What colour is your urine?</h2>
+            <p class="q-sub">Select the closest match. Colour can vary for many reasons and is not diagnostic on its own. Your choice is processed in this browser.</p>
+            <div class="urine-list">
+              <button class="urine-btn" id="urine-type-1" type="button" data-urine-type="1">
+                <span class="urine-swatch urine-swatch-1" aria-hidden="true"></span>
+                <span><span class="type-name">Clear / very pale yellow</span><span class="type-hint">Almost colourless</span></span>
+                <span class="type-num" aria-hidden="true">1</span>
+              </button>
+              <button class="urine-btn ideal-btn" id="urine-type-2" type="button" data-urine-type="2">
+                <span class="urine-swatch urine-swatch-2" aria-hidden="true"></span>
+                <span><span class="type-name">Pale straw yellow</span><span class="type-hint">A light yellow shade</span></span>
+                <span class="type-num" aria-hidden="true">2</span>
+              </button>
+              <button class="urine-btn ideal-btn" id="urine-type-3" type="button" data-urine-type="3">
+                <span class="urine-swatch urine-swatch-3" aria-hidden="true"></span>
+                <span><span class="type-name">Yellow</span><span class="type-hint">A yellow shade</span></span>
+                <span class="type-num" aria-hidden="true">3</span>
+              </button>
+              <button class="urine-btn" id="urine-type-4" type="button" data-urine-type="4">
+                <span class="urine-swatch urine-swatch-4" aria-hidden="true"></span>
+                <span><span class="type-name">Dark yellow / amber</span><span class="type-hint">Can vary with fluids, food, or supplements</span></span>
+                <span class="type-num" aria-hidden="true">4</span>
+              </button>
+              <button class="urine-btn" id="urine-type-5" type="button" data-urine-type="5">
+                <span class="urine-swatch urine-swatch-5" aria-hidden="true"></span>
+                <span><span class="type-name">Honey / orange-yellow</span><span class="type-hint">Consider any recent changes or symptoms</span></span>
+                <span class="type-num" aria-hidden="true">5</span>
+              </button>
+              <button class="urine-btn" id="urine-type-6" type="button" data-urine-type="6">
+                <span class="urine-swatch urine-swatch-6" aria-hidden="true"></span>
+                <span><span class="type-name">Brown / dark orange</span><span class="type-hint">Seek advice if unexplained or persistent</span></span>
+                <span class="type-num" aria-hidden="true">6</span>
+              </button>
+              <button class="urine-btn" id="urine-type-7" type="button" data-urine-type="7">
+                <span class="urine-swatch urine-swatch-7" aria-hidden="true"></span>
+                <span><span class="type-name">Pink or red</span><span class="type-hint">Can relate to food, medicines, or other causes</span></span>
+                <span class="type-num" aria-hidden="true">7</span>
+              </button>
+              <button class="urine-btn" id="urine-type-8" type="button" data-urine-type="8">
+                <span class="urine-swatch urine-swatch-8" aria-hidden="true"></span>
+                <span><span class="type-name">Purple / blue</span><span class="type-hint">May relate to food, medicines, or other causes</span></span>
+                <span class="type-num" aria-hidden="true">8</span>
+              </button>
+              <button class="urine-btn" id="urine-type-9" type="button" data-urine-type="9">
+                <span class="urine-swatch urine-swatch-9" aria-hidden="true"></span>
+                <span><span class="type-name">Cloudy / foamy</span><span class="type-hint">Appearance can vary; consider other symptoms</span></span>
+                <span class="type-num" aria-hidden="true">9</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="cscreen" id="ucscreen-result" aria-labelledby="ur-headline">
+            <div class="u-result-wrap">
+              <article class="result-card">
+                <div class="result-top">
+                  <div class="status-row">
+                    <span class="status-pill" id="ur-pill"></span>
+                    <span class="status-type" id="ur-type-label"></span>
+                  </div>
+                  <h2 class="result-headline" id="ur-headline" tabindex="-1"></h2>
+                  <div class="urine-scale-track" id="ur-scale" aria-hidden="true"></div>
+                  <div class="scale-labels" id="ur-scale-labels" aria-hidden="true"><span>Paler shades</span><span>Yellow shades</span><span>Darker shades</span></div>
+                </div>
+                <div class="divider" aria-hidden="true"></div>
+                <div class="advice-section">
+                  <h3 class="advice-heading">What this means</h3>
+                  <div class="advice-list" id="ur-advice"></div>
+                </div>
+                <aside class="gp-banner" id="ur-gp" aria-label="When to seek medical advice"></aside>
+              </article>
+
+              <aside class="gp-banner medical-banner" id="ur-medical-banner" aria-label="Professional medical help" hidden>
+                <strong>Please seek professional medical help</strong>
+                If you are in the UK, contact your GP or NHS 111. Elsewhere, use local medical advice. Do not delay if you are concerned.
+              </aside>
+
+              <section class="waitlist-banner" aria-labelledby="urine-waitlist-title">
+                <h3 id="urine-waitlist-title">Want to track this over time?</h3>
+                <p>We are planning an app to log health, spot patterns, and offer daily insights in the future.</p>
+                <div class="tally-loader" id="tally-loader-urine-result">
+                  <p class="tally-notice">The optional sign-up form is provided by Tally. Load it only if you would like to share your contact details with Tally.</p>
+                  <div class="tally-loader-actions">
+                    <button class="tally-btn" id="load-tally-urine-result" type="button" data-load-tally="tally-urine-result">Load sign-up form</button>
+                    <a class="tally-fallback-link" href="https://tally.so/r/GxL9E2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Open the form on Tally</a>
+                  </div>
+                </div>
+                <iframe id="tally-urine-result" data-tally-src="https://tally.so/embed/GxL9E2?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1" title="Stool Checker sign-up form provided by Tally" loading="lazy" referrerpolicy="no-referrer" hidden></iframe>
+              </section>
+              <button class="again-btn" id="reset-urine" type="button" data-reset="urine">← Check another colour</button>
+              <p class="disclaimer">This tool provides general health information for educational purposes. It is not a medical diagnosis. If you are in the UK and concerned about symptoms, contact your GP or NHS 111; elsewhere, use local healthcare advice.</p>
+            </div>
+          </section>
+        </section>
+
+        <section class="health-resources" aria-labelledby="health-resources-title">
+          <h2 id="health-resources-title">NHS health information</h2>
+          <p>For guidance beyond this checker, read about <a href="https://www.nhs.uk/conditions/constipation/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">constipation</a>, <a href="https://www.nhs.uk/conditions/diarrhoea-and-vomiting/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">diarrhoea and vomiting</a>, <a href="https://www.nhs.uk/conditions/blood-in-urine/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">blood in urine</a>, and <a href="https://www.nhs.uk/conditions/urinary-tract-infections-utis/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">urinary tract infections</a>.</p>
+        </section>
+      </div>
+    </section>
+
+    <!-- Business page -->
+    <section class="page" id="page-business" aria-labelledby="business-title">
+      <div class="biz">
+        <header class="site-header">
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a class="site-nav-logo" href="#home" aria-label="Stool Checker home">Stool Checker</a>
+            <div class="site-nav-actions">
+              <a class="site-nav-link" href="#checker/stool">Start checker</a>
+              <a class="site-nav-link" href="#privacy">Privacy</a>
+            </div>
+          </nav>
+        </header>
+
+        <section class="biz-hero" aria-labelledby="business-title">
+          <p class="badge badge-inverse">For venues &amp; brands</p>
+          <h1 id="business-title">Help people stay aware<br>by putting stickers in your venue</h1>
+          <button class="btn-light" type="button" data-action="scroll-business-form">Get started <span aria-hidden="true">→</span></button>
+        </section>
+
+        <div class="biz-stats" aria-label="Venue offer">
+          <article class="biz-stat biz-stat-single">
+            <span class="biz-stat-num">Free</span>
+            <span class="biz-stat-label">QR sticker placement for venues</span>
+          </article>
+        </div>
+
+        <section class="section-card" aria-labelledby="venues-title">
+          <p class="section-label">Who it is for</p>
+          <h2 id="venues-title">Perfect for these venues</h2>
+          <div class="venue-types">
+            <article class="venue-type"><h3>Cafés</h3></article>
+            <article class="venue-type"><h3>Bars &amp; pubs</h3></article>
+            <article class="venue-type"><h3>Restaurants</h3></article>
+            <article class="venue-type"><h3>Gyms</h3></article>
+            <article class="venue-type"><h3>Hotels</h3></article>
+            <article class="venue-type"><h3>Salons &amp; spas</h3></article>
+          </div>
+          <p class="venue-types-note">And for brands in gut health, hydration, supplements, probiotics, and digestive wellness — your audience is already there.</p>
+        </section>
+
+        <section class="section-card" aria-labelledby="business-how-title">
+          <p class="section-label">How it works</p>
+          <h2 id="business-how-title">Up and running in days</h2>
+          <div class="how-list">
+            <article class="how-item">
+              <span class="how-num" aria-hidden="true">1</span>
+              <div>
+                <h3>Register your interest</h3>
+                <p>Tell us whether you are a venue wanting stickers, a brand interested in advertising, or both. Contact arrangements will be confirmed when the business enquiry service is live.</p>
+              </div>
+            </article>
+            <article class="how-item">
+              <span class="how-num" aria-hidden="true">2</span>
+              <div>
+                <h3>Receive your stickers</h3>
+                <p>For venues, the planned offer is a pack of branded QR stickers ready for bathrooms, with no design work needed on your end.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="biz-form-card" id="biz-enquiry" aria-labelledby="business-contact-title">
+          <h2 id="business-contact-title">Get in touch</h2>
+          <p>Whether you want free QR stickers for your venue, or you are a brand interested in advertising, use the contact option below to register your interest.</p>
+
+          <form class="business-lead-form" id="biz-enquiry-form" hidden>
+            <div class="form-field">
+              <label for="biz-name">Name</label>
+              <input id="biz-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="biz-email">Email address</label>
+              <input id="biz-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="biz-enquiry-type">Enquiry type</label>
+              <select id="biz-enquiry-type" name="enquiryType" required>
+                <option value="" selected disabled>Select an enquiry type</option>
+                <option value="venue">Venue</option>
+                <option value="brand">Brand</option>
+                <option value="both">Venue and brand</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="biz-organisation">Organisation</label>
+              <input id="biz-organisation" name="organisation" type="text" autocomplete="organization" required>
+            </div>
+            <div class="form-field">
+              <label for="biz-message">Message</label>
+              <textarea id="biz-message" name="message" rows="5" required></textarea>
+            </div>
+            <p>This opens a draft in your email application; you choose whether to send it.</p>
+            <button class="btn-primary" type="submit">Open email draft</button>
+          </form>
+
+          <div id="biz-fallback">
+            <p>The detailed business enquiry form is not active yet. The existing Tally form only asks for your name and email; it cannot collect your business details. If you choose to use it, we can ask for those details when we follow up.</p>
+            <div class="tally-loader" id="tally-loader-business">
+              <p class="tally-notice">The optional contact form is provided by Tally. Load it only if you would like to share contact details with Tally.</p>
+              <div class="tally-loader-actions">
+                <button class="tally-btn" id="load-tally-business" type="button" data-load-tally="tally-business">Load Tally contact form</button>
+                <a class="tally-fallback-link" href="https://tally.so/r/GxL9E2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Open the contact form on Tally</a>
+              </div>
+            </div>
+            <iframe id="tally-business" data-tally-src="https://tally.so/embed/GxL9E2?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1" title="Stool Checker business contact form provided by Tally" loading="lazy" referrerpolicy="no-referrer" hidden></iframe>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Privacy page -->
+    <section class="page" id="page-privacy" aria-labelledby="privacy-title">
+      <div class="lp privacy-page">
+        <header class="site-header">
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a class="site-nav-logo" href="#home" aria-label="Stool Checker home">Stool Checker</a>
+            <div class="site-nav-actions">
+              <a class="site-nav-link" href="#checker/stool">Start checker</a>
+              <a class="site-nav-link" href="#business">For businesses</a>
+            </div>
+          </nav>
+        </header>
+
+        <section class="section-card" aria-labelledby="privacy-title">
+          <p class="section-label">Privacy</p>
+          <h1 id="privacy-title">How this site handles information</h1>
+          <p>This page explains the intended information handling for the checker and optional contact forms. It should be completed with the site owner’s contact and retention information before launch.</p>
+        </section>
+
+        <section class="section-card" aria-labelledby="checker-privacy-title">
+          <h2 id="checker-privacy-title">Checker selections</h2>
+          <p>When you choose a stool type or urine colour, the selection and the resulting general information are processed in your browser. The checker is designed not to use app-managed storage for these selections, including accounts, local storage, or app cookies.</p>
+          <p>This does not mean that every part of the wider delivery path is known to this page. For example, the website host may process technical request information as described below.</p>
+        </section>
+
+        <section class="section-card" aria-labelledby="tally-privacy-title">
+          <h2 id="tally-privacy-title">Optional Tally forms</h2>
+          <p>No Tally form is loaded until you select a load button or use the direct Tally link. If you choose to load or visit a form, Tally receives the contact details you decide to submit and processes its own technical data in connection with providing the form.</p>
+          <p>Those form interactions are handled by Tally under its own practices. Do not submit information you are not comfortable sharing through that third-party form.</p>
+        </section>
+
+        <section class="section-card" aria-labelledby="hosting-privacy-title">
+          <h2 id="hosting-privacy-title">Website hosting and logs</h2>
+          <p>The hosting provider may collect technical information in server or security logs, such as IP address, browser or device details, request times, and the pages requested. The precise data, purpose, recipients, and retention depend on the hosting configuration and must be confirmed by the site owner.</p>
+        </section>
+
+        <section class="section-card" aria-labelledby="owner-privacy-title">
+          <h2 id="owner-privacy-title">Owner details still required</h2>
+          <p><strong>Privacy contact:</strong> To be supplied by the site owner before launch.</p>
+          <p><strong>Retention information:</strong> To be supplied by the site owner before launch, including any arrangements for Tally submissions and hosting logs.</p>
+          <p>If you have a privacy question before these details are published, please do not use the optional contact forms.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

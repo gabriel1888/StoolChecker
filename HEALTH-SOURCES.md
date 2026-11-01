@@ -1,0 +1,13 @@
+# Health content sources
+
+**Content status:** This dataset is educational and non-diagnostic. It does not provide a clinician review, and any clinical assessment remains pending. A stool shape or urine appearance alone cannot establish a cause, confirm health, or rule out illness. Individual clinical advice, including a tailored fluid plan, takes priority over this general guidance.
+
+The following public NHS pages were reviewed for the cautious self-care, symptom context and escalation wording used in `data.js`.
+
+- [NHS: Constipation](https://www.nhs.uk/conditions/constipation/) — Supports the adult constipation symptom context, gradual fibre changes, fluids, activity, toilet routine, pharmacist advice, and GP review for constipation that is persistent or recurrent or occurs with blood in poo, weight loss, tiredness, bowel-habit change or tummy pain.
+- [NHS: Diarrhoea and vomiting](https://www.nhs.uk/conditions/diarrhoea-and-vomiting/) — Supports fluids and small sips when sick, rest, eating when able, avoiding fatty or spicy foods if helpful, infection-spread precautions, and the UK NHS 111/999 escalation wording for inability to keep fluids down, bloody diarrhoea, dehydration, prolonged diarrhoea, severe pain, confusion, breathing difficulty or vomiting blood.
+- [NHS: Dehydration](https://www.nhs.uk/conditions/dehydration/) — Supports describing dark yellow, strong-smelling urine and peeing less often as possible dehydration signs when considered with other symptoms. It also supports small-sip advice when sick and the specified UK NHS 111/999 red flags. Urine colour is not presented as a stand-alone hydration or kidney-health test.
+- [NHS: Blood in urine](https://www.nhs.uk/conditions/blood-in-urine/) — Supports urgent GP or NHS 111 advice in the UK for possible blood in urine, including when the amount is small or uncertain. It also notes that urine may appear bright pink, red or dark brown and that beetroot, medicines, vaginal bleeding or bleeding from the bottom may affect what is seen; these possibilities do not replace assessment.
+- [NHS: Urinary tract infections](https://www.nhs.uk/conditions/urinary-tract-infections-utis/) — Supports the cautious UTI symptom context for cloudy urine, including pain or burning when peeing, frequency or urgency, abdominal or back pain, temperature changes and shivering. It supports the listed higher-risk or urgent-GP/NHS-111 groups and 999/A&E advice for confusion, drowsiness or difficulty speaking.
+
+NHS 111 and 999 references in this dataset apply to the UK. Outside the UK, use the relevant local urgent-care or emergency service. Seek professional medical advice for symptoms that concern you, are severe, new or persistent.
